@@ -1,0 +1,144 @@
+Object Oriented programming
+
+Classes & Objects
+|-> Group of | entites
+             |-> entites in real world
+
+class is a blueprint of objects
+class => blueprint
+            |-> mobile1, mobile2, mobile13,..
+
+class -> attributes (properties) + funtions (methods)
+
+Access Specifiers (Modifiers)
+
+___________________________________________________________________________________________
+|Access Modifiers  | within class  | within pkg  | outside pkg by subclass  | outside pkg  |
+|                                                                                          |
+| Private          |      Yes      |      No     |      No                  |     No       |    
+| Defualt          |      Yes      |      Yes    |      No                  |     No       |     
+| Protected        |      Yes      |      Yes    |      Yes                 |     No       |
+| Public           |      Yes      |      Yes    |      Yes                 |     Yes      |
+|__________________________________________________________________________________________|
+
+
+Getters & Setters
+
+Get: to return the value
+Set: to modify the value
+
+*this* => this is a special keyword that represenst the current object
+__________________________________________________________________________________________
+
+OOPs
+
+1.
+Encapsulation
+    "Encapsulation is defined as the wrapping up data and methods under a single unit. It also implements data hiding."
+
+    (___|__) => class  -> It hava properties & funtions
+    
+    Data Hiding -> Useless data for users => private | Protected
+
+__________________________________________________________________________________________
+
+OOPs
+
+Constructors
+    "Constructors is a special type of method which is inwoked automatically at the time of creation of object."
+
+    - Constructor have the same name as class & structure
+    
+    - Constructor have not any return type (Not even void).
+
+    - Constructor are called once when the object created
+
+    - Memory allocated when the Constructor is called.
+
+Types of Constructor
+    - There are three types of Constructor
+
+    i) Non-Parameterized Constructor
+    ii) Parametrized Constructor
+    iii) Copy Constructor
+
+
+Shallow Copy Constructor  
+=> changes Reflect -> Copy only references
+
+Deep Copy Constructor
+=> Changes don't Reflect -> make new object
+
+__________________________________________________________________________________________
+
+OOPs
+
+2. Inheritance
+
+    "Inheritance is when the properties & mehtods of base class passed on to a derived class or subclass."
+
+    e.g:-
+        Animal{} -> Lion{}
+
+Types of Inheritance
+    i) Single Level Inheritance (Base class -> Derived class)
+    ii) Multi Level Inheritance (Base -> derived -> derived)
+    iii) Hierarichial Inheritance (Base -> derived1, Base to derived2)
+
+
+__________________________________________________________________________________________
+
+OOPs
+
+3. Polymorphism
+    "We trying to achieve the same thing but multiple forms."
+
+    Compile time Polymorphism
+        - Method overloading
+    
+    Run time overloading
+        - Method overriding -> Parent and child classes both having the same funtions with different definition.
+
+__________________________________________________________________________________________
+
+Packages in java 
+    "Package is a group of similar type of classes, interfaces, and subpackages."
+
+    i) Inbuilt Packages
+    ii) User defined Packages
+
+__________________________________________________________________________________________
+
+Interfaces 
+    Interface is a blueprint of class
+
+    Interfaces for:
+        - Multiple Inheritance
+        - Total Abstraction
+
+Properties of Interfaces:
+    i) All methods are public, abstract and without implementation
+    ii) Used to achieve multiple inheritance 
+    iii) All variables in the indterface are final, public, and static
+
+
+_________________
+
+static keyword 
+"static keyword in java is used to share the same variable or method of a given class."
+
+These can be:
+    - Properties 
+    - Methods 
+    - blocks
+    - Nested classes
+
+_________________
+
+super keyword
+
+"super is used to refer immediate parent class object."
+
+    - It access the parent's properties.
+    - It access the parent's functions.
+    - It access the parent; constructor
